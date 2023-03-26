@@ -1,0 +1,15 @@
+{
+  "name": "bespoked-bike-web-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"cd bespoked-bike-web-bi-api && dotnet run\" \"cd bespoked-bikes-web-bi-client && npm run dev\""
+  },
+  "author": "Jose Cantillo",
+  "license": "ISC",
+  "dependencies": {
+    "@trendmicro/react-sidenav": "^0.5.0"
+  }
+}

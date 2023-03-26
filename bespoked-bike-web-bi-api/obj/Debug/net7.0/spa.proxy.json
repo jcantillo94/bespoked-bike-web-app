@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "",
+"LaunchCommand": "",
+"WorkingDirectory": "C:\\Users\\Coki\\source\\repos\\bespoked-bike-web-app\\bespoked-bike-web-bi-api",
+"MaxTimeoutInSeconds": "120"
+}
+}

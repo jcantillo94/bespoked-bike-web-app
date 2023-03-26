@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\bespoked-bike-web-bi-api.props" />
+</Project>

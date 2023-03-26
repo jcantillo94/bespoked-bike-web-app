@@ -1,0 +1,17 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore dist directory
+dist/
+
+
+# React client project
+/bespoked-bike-web-bi-client/.env
+
+# ASP.NET Core API project
+/bespoked-bike-web-bi-api/.env
+
+# Ignore other files and directories
+/bin/
+/obj/
+/node_modules/

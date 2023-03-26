@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin\\Debug\\net7.0",
+    "\\bin\\Release",
+    "\\Controllers",
+    "\\Models",
+    "\\obj",
+    "\\obj\\Release",
+    "\\Properties"
+  ],
+  "SelectedNode": "\\appsettings.json",
+  "PreviewInSolutionExplorer": false
+}

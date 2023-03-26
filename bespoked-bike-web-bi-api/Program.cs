@@ -5,7 +5,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-var connString = builder.Configuration.GetConnectionString("BespokedBikesConnection");
+DotNetEnv.LoadOptions();
+
+/*var connString = builder.Configuration.GetConnectionString("BespokedBikesConnection");
+*/
+
+var connString = builder.Configuration.GetConnectionString(Environment.GetEnvironmentVariable("DB_CONNECTION_STRING"));
+
 builder.Services.AddDbContext<BespokedBikesContext>(options => options.UseSqlServer(connString));
 
 builder.Services.AddControllers().AddNewtonsoftJson(options =>

@@ -14,12 +14,12 @@ import {
   Tooltip,
 } from '@mui/material';
 import { Delete, Edit } from '@mui/icons-material';
-import { updateProduct } from '../api/products';
-import { getProducts } from '../api/products';
+import { updateSalesperson } from '../api/salesperson';
+import { getSalespersons } from '../api/salesperson';
 
 
 
-const ProductsTable = ({data}) => {
+const SalespersonsTable = ({data}) => {
   const [createModalOpen, setCreateModalOpen] = useState(false);
   const [tableData, setTableData] = useState(data);
   const [validationErrors, setValidationErrors] = useState({});
@@ -38,10 +38,10 @@ const ProductsTable = ({data}) => {
       console.log("rowIndex " + row.index);
       //send/receive api updates here, then refetch or update local table data for re-render
       console.log("Save " + row.id + " & " + values);
-      updateProduct(row.id + 1, values);
+      updateSalesperson(row.id + 1, values);
       setTableData([...tableData]);
       exitEditingMode(); //required to exit editing mode and close modal
-      getProducts();
+      getSalespersons();
       console.log("Finished");
     }
   };
@@ -98,71 +98,63 @@ const ProductsTable = ({data}) => {
   const columns = useMemo(
     () => [
       {
-        accessorKey: 'productId',
-        header: 'ProductId',
+        accessorKey: 'salespersonId',
+        header: 'SalespersonId',
         enableColumnOrdering: false,
         enableEditing: false, //disable editing on this column
         enableSorting: false,
         size: 80,
       },
       {
-        accessorKey: 'productName',
-        header: 'Product Name',
+        accessorKey: 'firstName',
+        header: 'First Name',
         size: 140,
         muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
           ...getCommonEditTextFieldProps(cell),
         }),
       },
       {
-        accessorKey: 'manufacturer',
-        header: 'Manufacturer',
+        accessorKey: 'lastName',
+        header: 'Last Name',
         size: 140,
         muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
           ...getCommonEditTextFieldProps(cell),
         }),
       },
       {
-        accessorKey: 'style',
-        header: 'Style',
+        accessorKey: 'address',
+        header: 'Address',
         muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
           ...getCommonEditTextFieldProps(cell),
         }),
       },
       {
-        accessorKey: 'purchasePrice',
-        header: 'Purchase Price',
+        accessorKey: 'phone',
+        header: 'Phone',
         size: 80,
         muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
           ...getCommonEditTextFieldProps(cell),
         }),
       },
       {
-        accessorKey: 'salePrice',
-        header: 'Sale Price',
+        accessorKey: 'startDate',
+        header: 'Start Date',
         size: 80,
         muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
           ...getCommonEditTextFieldProps(cell),
         }),
       },
       {
-        accessorKey: 'qty',
-        header: 'Quantity',
+        accessorKey: 'terminationDate',
+        header: 'Termination Date',
         size: 80,
         muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
           ...getCommonEditTextFieldProps(cell),
         }),
       },
       {
-        accessorKey: 'onhand',
-        header: 'Onhand',
-        size: 80,
-        muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
-          ...getCommonEditTextFieldProps(cell),
-        }),
-      },
-      {
-        accessorKey: 'commissionPct',
-        header: 'Commission %',
+        accessorKey: 'managerID',
+        header: 'Manager By Salesperson Id',
         size: 80,
         muiTableBodyCellEditTextFieldProps: ({ cell }) => ({
           ...getCommonEditTextFieldProps(cell),
@@ -210,7 +202,7 @@ const ProductsTable = ({data}) => {
             onClick={() => setCreateModalOpen(true)}
             variant="contained"
           >
-            Create New Account
+            Create New Salesperson
           </Button>
         )}
       />
@@ -284,4 +276,4 @@ const validateEmail = (email) =>
     );
 const validateAge = (age) => age >= 18 && age <= 50;
 
-export default ProductsTable;
+export default SalespersonsTable;

@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using bespoked_bike_web_bi_api.Models;
+using static NuGet.Packaging.PackagingConstants;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 
 namespace bespoked_bike_web_bi_api.Controllers
 {
@@ -14,21 +17,32 @@ namespace bespoked_bike_web_bi_api.Controllers
     public class SalesController : ControllerBase
     {
         private readonly BespokedBikesContext _context;
+        private readonly IMapper _mapper;
 
-        public SalesController(BespokedBikesContext context)
+        public SalesController(BespokedBikesContext context, IMapper mapper)
         {
             _context = context;
+            this._mapper = mapper;
         }
 
         // GET: api/Sales
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Sale>>> GetSales()
+        public async Task<ActionResult<IEnumerable<SaleCreateDTO>>> GetSales()
         {
           if (_context.Sales == null)
           {
               return NotFound();
           }
-            return await _context.Sales.ToListAsync();
+
+            var sales =   await _context.Sales
+            .Include(o => o.Customer)
+            .Include(o => o.Product)
+            .Include(o => o.Salesperson) // eagerly load the customer object
+            .ToListAsync();
+
+            var saleDTOs = _mapper.Map<List<SaleCreateDTO>>(sales);
+
+            return saleDTOs;
         }
 
         // GET: api/Sales/5

@@ -1,3 +1,4 @@
+using bespoked_bike_web_bi_api.Configurations;
 using bespoked_bike_web_bi_api.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
@@ -10,6 +11,7 @@ DotNetEnv.Env.Load();
 
 var connString = builder.Configuration.GetConnectionString(Environment.GetEnvironmentVariable("DB_CONNECTION_STRING"));
 builder.Services.AddDbContext<BespokedBikesContext>(options => options.UseSqlServer(connString));
+builder.Services.AddAutoMapper(typeof(MapperConfig));
 
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore

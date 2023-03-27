@@ -9,6 +9,10 @@ import {
   import { Home, Profile, Tables, Notifications } from "@/pages/dashboard";
   import { SignIn, SignUp } from "@/pages/auth";
   import Products from './pages/Products'
+  import Salespersons from './pages/Salesperson'
+  import Customers from './pages/Customers'
+  import Sales from './pages/Sales'
+
 
   
   const icon = {
@@ -31,17 +35,23 @@ import {
             path: "/Products",
             element: <Products />,
           },
+          {
+            icon: <HomeIcon {...icon} />,
+            name: "Salespersons",
+            path: "/Salespersons",
+            element: <Salespersons />,
+          },
         {
           icon: <UserCircleIcon {...icon} />,
           name: "Customers",
-          path: "/profile",
-          element: <Profile />,
+          path: "/Customers",
+          element: <Customers />,
         },
         {
           icon: <TableCellsIcon {...icon} />,
-          name: "tables",
-          path: "/tables",
-          element: <Tables />,
+          name: "Sales",
+          path: "/Sales",
+          element: <Sales />,
         },
       ],
     },

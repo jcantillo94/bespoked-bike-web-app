@@ -2,11 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
+    "\\DTOs",
+    "\\DTOs\\Sale",
     "\\Models",
     "\\obj",
     "\\obj\\Release",
     "\\Properties"
   ],
-  "SelectedNode": "\\Controllers\\ProductsController.cs",
+  "SelectedNode": "\\bespoked-bike-web-bi-api.sln",
   "PreviewInSolutionExplorer": false
 }

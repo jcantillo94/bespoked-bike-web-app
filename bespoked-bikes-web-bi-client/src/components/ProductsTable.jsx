@@ -210,7 +210,7 @@ const ProductsTable = ({data}) => {
             onClick={() => setCreateModalOpen(true)}
             variant="contained"
           >
-            Create New Account
+            Create New Product
           </Button>
         )}
       />

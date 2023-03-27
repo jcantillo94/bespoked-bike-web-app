@@ -27,10 +27,19 @@ import {
   projectsTableData,
   ordersOverviewData,
 } from "@/data";
+import PowerBIReport from "@/components/PowerBIReport";
+import getAccessToken from "@/helpers/PowerBIToken";
+import { useQuery } from '@tanstack/react-query';
+
 
 export function Home() {
+
+  const { isLoading, isError, error, reportToken: reportToken = "" } = useQuery(['powerBI'], getAccessToken);
+
+
   return (
     <div className="mt-12">
+      {/* <PowerBIReport reportToken={reportToken}/> */}
       <div className="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
         {statisticsCardsData.map(({ icon, title, footer, ...rest }) => (
           <StatisticsCard

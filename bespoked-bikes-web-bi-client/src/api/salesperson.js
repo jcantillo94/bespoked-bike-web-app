@@ -1,14 +1,14 @@
 import axios from 'axios';
 
 
-const productsApi = axios.create({
+const salespersonApi = axios.create({
   baseURL: "http://localhost:5214",
 });
 
-export const getProducts = async () => {
+export const getSalespersons = async () => {
   try {
-    console.log("getProducts");
-    const { data } = await productsApi.get('/api/products');
+    console.log("getSalesperson");
+    const { data } = await salespersonApi.get('/api/salespersons');
     console.log(data);
     return data;
   } catch (error) {
@@ -17,15 +17,15 @@ export const getProducts = async () => {
   }
 };
 
-export const updateProduct = async (productId, productData) => {
+export const updateSalesperson = async (salespersonId, salespersonData) => {
   try {
-    console.log("update " + productId);
-    console.log(productData);
-    const response = await productsApi.put(`/api/products/${productId}`, productData);
+    console.log("update " + salespersonId);
+    console.log(salespersonData);
+    const response = await salespersonApi.put(`/api/salespersons/${salespersonId}`, salespersonData);
     console.log(response);
     return response.data;
   } catch (error) {
     console.log(error);
-    throw new Error(error.response.data.message || 'Unable to update product');
+    throw new Error(error.response.data.message || 'Unable to update salesperson');
   }
 };

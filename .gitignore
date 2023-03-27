@@ -11,6 +11,9 @@ dist/
 # ASP.NET Core API project
 /bespoked-bike-web-bi-api/.env
 
+# Root project
+/.env
+
 # Ignore other files and directories
 /bin/
 /obj/

@@ -18,7 +18,6 @@ export function Footer({ brandName, brandLink, routes }) {
           >
             {brandName}
           </a>{" "}
-          for a better web.
         </Typography>
         <ul className="flex items-center gap-4">
           {routes.map(({ name, path }) => (
@@ -41,12 +40,8 @@ export function Footer({ brandName, brandLink, routes }) {
 }
 
 Footer.defaultProps = {
-  brandName: "Creative Tim",
-  brandLink: "https://www.creative-tim.com",
+  brandName: "Bespoked Bikes",
   routes: [
-    { name: "Creative Tim", path: "https://www.creative-tim.com" },
-    { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-    { name: "Blog", path: "https://www.creative-tim.com/blog" },
     { name: "License", path: "https://www.creative-tim.com/license" },
   ],
 };

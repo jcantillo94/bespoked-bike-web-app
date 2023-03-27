@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "XC3BfK1O2lvLuk0ES5oiGRU/pSUmPIxPVQj0y8lT6hg2DmY9DFgFSgabEGZJcA+EI/UkAMGYuxN73v8lpqqUzg==",
+  "dgSpecHash": "OW2I06+itZK7CFawtMm4PaKjFaWx3547gFOqsiKBnni0lnrFuH3ZgwNknXUBjxnd6Av9DdEDkzFhjOWSD9y1vw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Coki\\source\\repos\\bespoked-bike-web-app\\bespoked-bike-web-bi-api\\bespoked-bike-web-bi-api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Coki\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\Coki\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\Coki\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Coki\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\Coki\\.nuget\\packages\\dotnetenv\\2.5.0\\dotnetenv.2.5.0.nupkg.sha512",

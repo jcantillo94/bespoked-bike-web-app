@@ -578,3 +578,5 @@ C:\Users\Coki\source\repos\bespoked-bike-web-app\bespoked-bike-web-bi-api\obj\De
 C:\Users\Coki\source\repos\bespoked-bike-web-app\bespoked-bike-web-bi-api\obj\Debug\net7.0\bespoked-bike-web-bi-api.pdb
 C:\Users\Coki\source\repos\bespoked-bike-web-app\bespoked-bike-web-bi-api\obj\Debug\net7.0\bespoked-bike-web-bi-api.genruntimeconfig.cache
 C:\Users\Coki\source\repos\bespoked-bike-web-app\bespoked-bike-web-bi-api\obj\Debug\net7.0\ref\bespoked-bike-web-bi-api.dll
+C:\Users\Coki\source\repos\bespoked-bike-web-app\bespoked-bike-web-bi-api\bin\Debug\net7.0\DotNetEnv.dll
+C:\Users\Coki\source\repos\bespoked-bike-web-app\bespoked-bike-web-bi-api\bin\Debug\net7.0\Sprache.dll

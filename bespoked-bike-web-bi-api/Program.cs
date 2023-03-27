@@ -1,17 +1,14 @@
 using bespoked_bike_web_bi_api.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-DotNetEnv.LoadOptions();
-
-/*var connString = builder.Configuration.GetConnectionString("BespokedBikesConnection");
-*/
+DotNetEnv.Env.Load();
 
 var connString = builder.Configuration.GetConnectionString(Environment.GetEnvironmentVariable("DB_CONNECTION_STRING"));
-
 builder.Services.AddDbContext<BespokedBikesContext>(options => options.UseSqlServer(connString));
 
 builder.Services.AddControllers().AddNewtonsoftJson(options =>

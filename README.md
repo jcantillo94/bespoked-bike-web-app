@@ -29,31 +29,16 @@ The application is intended to display visualizations for the business intellige
 6. Navigate to the front-end directory and run the React Vite project.
 7. Use the application to view the business intelligence data and visualize it in Microsoft PowerBI (if access token generation issue is resolved).
 
-## Business Requirements
-⦁	Data layer
-⦁	Entities
-⦁	Products – Name, Manufacturer, Style, Purchase Price, Sale Price, Qty On Hand, Commission Percentage
-⦁	Salesperson – First Name, Last Name, Address, Phone, Start Date, Termination Date, Manager
-⦁	Customer – First Name, Last Name, Address, Phone, Start Date
-⦁	Sales – Product, Salesperson, Customer, Sales Date
-⦁	Discount – Product, Begin Date, End Date, Discount Percentage
-⦁	Seed with sample data for testing
-⦁	Middle tier
-⦁	Allows for client access to the data layer
-⦁	Client
-⦁	Display a list of salespersons
-⦁	Update a salesperson
-⦁	Display a list of products
-⦁	Update a product
-⦁	Display a list of customers
-⦁	Display a list of sales.  Optionally filter by date range.  This should include the Product, Customer, Date, Price, Salesperson, and Salesperson Commission.
-⦁	Create a sale
-⦁	Display a quarterly salesperson commission report
-⦁	Additional Requirements
-⦁	Products – No duplicate product can be entered. 
-⦁	Salespersons – No duplicate salesperson can be entered. 
+## Business Requirements Not Completed 3/27/2023
+* Display a list of sales. 
+* Optionally filter by date range. 
+* This should include the Product, Customer, Date, Price, Salesperson, and Salesperson Commission.
+* Create a sale
+* Display a quarterly salesperson commission report
+
+* Products – No duplicate product can be entered.
+* Salespersons – No duplicate salesperson can be entered.
 
 Non-functional Requirements
-⦁	Publish the source code to an online source code repository of your choosing.
-⦁	Optional: Host in Azure.
+* Optional: Host in Azure.
 

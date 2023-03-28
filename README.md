@@ -6,11 +6,11 @@ This is a web application that allows for business operational intelligence. The
 The application is intended to display visualizations for the business intelligence data that was received from the SQL Server database data source. To display these visualizations, we intended to use Microsoft PowerBI by generating an access token via the Power BI Embed REST API. However, there were issues with generating the access token which we are currently working on resolving.
 
 ## Technologies Used
-ASP.NET Core 7.0
-React Vite
-SQL Server
-Entity Framework
-Microsoft PowerBI
+* ASP.NET Core 7.0
+* React Vite
+* SQL Server
+* Entity Framework
+* Microsoft PowerBI
 
 
 ## Installation

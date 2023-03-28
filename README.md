@@ -1,5 +1,7 @@
 # bespoked-bike-web-app
 
+![image](https://user-images.githubusercontent.com/48455155/228117449-d67ca17a-4313-4163-aecc-c76cf5b23b21.png)
+
 Business Operational Intelligence Web Application
 This is a web application that allows for business operational intelligence. The back-end was built with ASP.NET Core 7.0 API and the front-end was built with React Vite. The database used for this project was SQL Server and it was scaffolded using Entity Framework to create entities in the back-end project.
 
@@ -21,3 +23,4 @@ Run the Entity Framework migration to create the necessary tables in the databas
 Build and run the ASP.NET Core back-end project.
 Navigate to the front-end directory and run the React Vite project.
 Use the application to view the business intelligence data and visualize it in Microsoft PowerBI (if access token generation issue is resolved).
+

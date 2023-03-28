@@ -16,7 +16,8 @@ console.log(import.meta.env.VITE_CLIENT_SECRET);
 console.log(import.meta.env.VITE_WORKSPACE_ID);
 
 const getAccessToken = async () => {
-  const url = `https://login.microsoftonline.us/${tenantId}/oauth2/token`;
+  // const url = `https://login.microsoftonline.us/${tenantId}/oauth2/token`;
+  const url = `https://api.powerbi.com/v1.0/${tenantId}/GenerateToken`;
 
   console.log(tenantId);
 console.log(clientId);
@@ -37,6 +38,8 @@ console.log(workspaceId);
     resource: 'https://analysis.usgovcloudapi.net/powerbi/government',
     scope: 'https://analysis.usgovcloudapi.net/powerbi/government/.default'
   };
+
+  console.log(data);
 
   const response = await axios.post(url, data, config);
 

@@ -1,10 +1,17 @@
 import { useEffect, useRef } from "react";
 import * as pbi from "powerbi-client";
+import getAccessToken from "@/helpers/PowerBIToken";
+import { useQuery } from '@tanstack/react-query';
 
 const reportId = import.meta.env.VITE_POWERBI_REPORT_ID;
 
-const PowerBIReport = ({ reportToken }) => {
+
+
+
+const PowerBIReport = () => {
   const reportContainer = useRef(null);
+
+  const { isLoading, isError, error, reportToken = "" } = useQuery(['powerBI'], getAccessToken);
 
   console.log("ReportBIReport " + reportId);
 

@@ -32,11 +32,7 @@ console.log(workspaceId);
   };
 
   const data = {
-    grant_type: 'client_credentials',
-    client_id: clientId,
-    client_secret: clientSecret,
-    resource: 'https://analysis.usgovcloudapi.net/powerbi/government',
-    scope: 'https://analysis.usgovcloudapi.net/powerbi/government/.default'
+    accessLevel : "View"
   };
 
   console.log(data);

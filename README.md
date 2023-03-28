@@ -16,11 +16,11 @@ The application is intended to display visualizations for the business intellige
 
 
 ## Installation
-Clone the repository to your local machine.
-Open the solution in Visual Studio.
-Configure the connection string for the SQL Server database.
-Run the Entity Framework migration to create the necessary tables in the database.
-Build and run the ASP.NET Core back-end project.
-Navigate to the front-end directory and run the React Vite project.
-Use the application to view the business intelligence data and visualize it in Microsoft PowerBI (if access token generation issue is resolved).
+1. Clone the repository to your local machine.
+2. Open the solution in Visual Studio.
+3. Configure the connection string for the SQL Server database.
+4. Run the Entity Framework migration to create the necessary tables in the database.
+5. Build and run the ASP.NET Core back-end project.
+6. Navigate to the front-end directory and run the React Vite project.
+7. Use the application to view the business intelligence data and visualize it in Microsoft PowerBI (if access token generation issue is resolved).
 

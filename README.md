@@ -9,7 +9,7 @@ The application is intended to display visualizations for the business intellige
 * ASP.NET Core 7.0
 * React Vite
 * SQL Server
-* Entity Framework
+* Entity Framework Core
 * Microsoft PowerBI
 
 

@@ -10,7 +10,7 @@
 ## Business Operational Intelligence Web Application
 This is a web application that allows for business operational intelligence. The back-end was built with ASP.NET Core 7.0 API and the front-end was built with React Vite. The database used for this project was SQL Server and it was scaffolded using Entity Framework to create entities in the back-end project.
 
-The application is intended to display visualizations for the business intelligence data that was received from the SQL Server database data source. To display these visualizations, the intention was to use Microsoft PowerBI by generating an access token via the Power BI Embed REST API. However, there were issues with generating the access token which is currently being worked on towards on resolving.
+The application is intended to display visualizations for the business intelligence data that was received from the SQL Server database data source. To display these visualizations, the intention was to use Microsoft PowerBI by generating an access token via the Power BI Embed REST API. However, there were issues with generating the access token which is currently being worked on towards resolving.
 
 ## Technologies Used
 * ASP.NET Core 7.0 (Backend API)

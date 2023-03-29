@@ -10,14 +10,14 @@
 ## Business Operational Intelligence Web Application
 This is a web application that allows for business operational intelligence. The back-end was built with ASP.NET Core 7.0 API and the front-end was built with React Vite. The database used for this project was SQL Server and it was scaffolded using Entity Framework to create entities in the back-end project.
 
-The application is intended to display visualizations for the business intelligence data that was received from the SQL Server database data source. To display these visualizations, we intended to use Microsoft PowerBI by generating an access token via the Power BI Embed REST API. However, there were issues with generating the access token which we are currently working on resolving.
+The application is intended to display visualizations for the business intelligence data that was received from the SQL Server database data source. To display these visualizations, the intention was to use Microsoft PowerBI by generating an access token via the Power BI Embed REST API. However, there were issues with generating the access token which is currently being worked on towards on resolving.
 
 ## Technologies Used
-* ASP.NET Core 7.0
-* React Vite
-* SQL Server
-* Entity Framework Core
-* Microsoft PowerBI
+* ASP.NET Core 7.0 (Backend API)
+* React Vite (Frontend Client)
+* SQL Server (Database for Business Entities)
+* Entity Framework Core (Data Modeling for use in the Backend API)
+* Microsoft PowerBI (Reporting)
 
 
 ## Installation
@@ -29,7 +29,7 @@ The application is intended to display visualizations for the business intellige
 6. Navigate to the front-end directory and run the React Vite project.
 7. Use the application to view the business intelligence data and visualize it in Microsoft PowerBI (if access token generation issue is resolved).
 
-## Business Requirements Not Completed 3/27/2023
+## Business Requirements Not Completed (3/27/2023)
 * Display a list of sales. 
 * Optionally filter by date range. 
 * This should include the Product, Customer, Date, Price, Salesperson, and Salesperson Commission.
@@ -39,6 +39,6 @@ The application is intended to display visualizations for the business intellige
 * Products – No duplicate product can be entered.
 * Salespersons – No duplicate salesperson can be entered.
 
-Non-functional Requirements
+## Non-functional Requirements Not Completed (3/27/2023)
 * Optional: Host in Azure.
 
